@@ -1,15 +1,15 @@
     python -u run_longExp.py \
-    --data ETTm2 \
+    --data ETTm1 \
     --root_path ./dataset/ETT-small \
-    --data_path ETTm2.csv \
+    --data_path ETTm1.csv \
     --enc_in 7 \
     --seq_len 720 \
     --pred_len 96 \
-    --e_layers 2 \
-    --d_model 256 \
-    --dropout 0.0 \
-    --patch_len 48 \
-    --stride 48 \
+    --e_layers 3 \
+    --d_model 64 \
+    --dropout 0.1 \
+    --patch_len 24 \
+    --stride 24 \
     --batch_size 1024 \
     --patience 20 \
     --learning_rate 0.001 \
@@ -19,37 +19,37 @@
     --devices 0
 
     python -u run_longExp.py \
-    --data ETTm2 \
+    --data ETTm1 \
     --root_path ./dataset/ETT-small \
-    --data_path ETTm2.csv \
+    --data_path ETTm1.csv \
     --enc_in 7 \
     --seq_len 720 \
     --pred_len 192 \
-    --e_layers 1 \
-    --d_model 256 \
-    --dropout 0.0 \
-    --patch_len 48 \
-    --stride 48 \
+    --e_layers 3 \
+    --d_model 64 \
+    --dropout 0.1 \
+    --patch_len 24 \
+    --stride 24 \
     --batch_size 1024 \
     --patience 20 \
     --learning_rate 0.001 \
     --pad_size 1 \
-    --local_size 2\
+    --local_size 2 \
     --use_multi_gpu \
     --devices 0
 
     python -u run_longExp.py \
-    --data ETTm2 \
+    --data ETTm1 \
     --root_path ./dataset/ETT-small \
-    --data_path ETTm2.csv \
+    --data_path ETTm1.csv \
     --enc_in 7 \
     --seq_len 720 \
     --pred_len 336 \
     --e_layers 3 \
-    --d_model 256 \
-    --dropout 0.0 \
-    --patch_len 48 \
-    --stride 48 \
+    --d_model 64 \
+    --dropout 0.2 \
+    --patch_len 24 \
+    --stride 24 \
     --batch_size 1024 \
     --patience 20 \
     --learning_rate 0.001 \
@@ -59,17 +59,17 @@
     --devices 0
 
     python -u run_longExp.py \
-    --data ETTm2 \
+    --data ETTm1 \
     --root_path ./dataset/ETT-small \
-    --data_path ETTm2.csv \
+    --data_path ETTm1.csv \
     --enc_in 7 \
     --seq_len 720 \
     --pred_len 720 \
     --e_layers 3 \
-    --d_model 256 \
-    --dropout 0.0 \
-    --patch_len 48 \
-    --stride 48 \
+    --d_model 128 \
+    --dropout 0.1 \
+    --patch_len 24 \
+    --stride 24 \
     --batch_size 1024 \
     --patience 20 \
     --learning_rate 0.001 \

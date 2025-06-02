@@ -1,0 +1,79 @@
+    python -u run_longExp.py \
+    --data custom \
+    --root_path ./dataset/electricity \
+    --data_path electricity.csv \
+    --enc_in 321 \
+    --seq_len 720 \
+    --pred_len 96 \
+    --e_layers 2 \
+    --d_model 512 \
+    --dropout 0.0 \
+    --patch_len 24 \
+    --stride 24 \
+    --pad_size 15 \
+    --local_size 16 \
+    --batch_size 32 \
+    --patience 20 \
+    --learning_rate 0.0001 \
+    --use_multi_gpu \
+    --devices 0,1
+
+    python -u run_longExp.py \
+    --data custom \
+    --root_path ./dataset/electricity \
+    --data_path electricity.csv \
+    --enc_in 321 \
+    --seq_len 720 \
+    --pred_len 192 \
+    --e_layers 3 \
+    --d_model 256 \
+    --dropout 0.0 \
+    --patch_len 24 \
+    --stride 24 \
+    --pad_size 15 \
+    --local_size 16 \
+    --batch_size 32 \
+    --patience 20 \
+    --learning_rate 0.0001 \
+    --use_multi_gpu \
+    --devices 0,1,2,3
+
+    python -u run_longExp.py \
+    --data custom \
+    --root_path ./dataset/electricity \
+    --data_path electricity.csv \
+    --enc_in 321 \
+    --seq_len 720 \
+    --pred_len 336 \
+    --e_layers 2 \
+    --d_model 512 \
+    --dropout 0.0 \
+    --patch_len 24 \
+    --stride 24 \
+    --pad_size 15 \
+    --local_size 16 \
+    --batch_size 32 \
+    --patience 20 \
+    --learning_rate 0.0001 \
+    --use_multi_gpu \
+    --devices 0,1,2,3
+
+    python -u run_longExp.py \
+    --data custom \
+    --root_path ./dataset/electricity \
+    --data_path electricity.csv \
+    --enc_in 321 \
+    --seq_len 720 \
+    --pred_len 720 \
+    --e_layers 2 \
+    --d_model 512 \
+    --dropout 0.0 \
+    --patch_len 24 \
+    --stride 24 \
+    --pad_size 15 \
+    --local_size 16 \
+    --batch_size 32 \
+    --patience 20 \
+    --learning_rate 0.0001 \
+    --use_multi_gpu \
+    --devices 0,1,2,3

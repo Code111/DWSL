@@ -1,0 +1,79 @@
+    python -u run_longExp.py \
+    --data custom \
+    --root_path ./dataset/traffic \
+    --data_path traffic.csv \
+    --enc_in 862 \
+    --seq_len 720 \
+    --pred_len 96 \
+    --e_layers 3 \
+    --d_model 512 \
+    --dropout 0.0 \
+    --patch_len 48 \
+    --stride 48 \
+    --pad_size 2 \
+    --local_size 16 \
+    --batch_size 16 \
+    --patience 20 \
+    --learning_rate 0.001 \
+    --use_multi_gpu \
+    --devices 0,1
+
+    python -u run_longExp.py \
+    --data custom \
+    --root_path ./dataset/traffic \
+    --data_path traffic.csv \
+    --enc_in 862 \
+    --seq_len 720 \
+    --pred_len 192 \
+    --e_layers 3 \
+    --d_model 512 \
+    --dropout 0.0 \
+    --patch_len 48 \
+    --stride 48 \
+    --pad_size 2 \
+    --local_size 16 \
+    --batch_size 16 \
+    --patience 20 \
+    --learning_rate 0.001 \
+    --use_multi_gpu \
+    --devices 0,1,2,3
+
+    python -u run_longExp.py \
+    --data custom \
+    --root_path ./dataset/traffic \
+    --data_path traffic.csv \
+    --enc_in 862 \
+    --seq_len 720 \
+    --pred_len 336 \
+    --e_layers 2 \
+    --d_model 512 \
+    --dropout 0.0 \
+    --patch_len 48 \
+    --stride 48 \
+    --pad_size 2 \
+    --local_size 16 \
+    --batch_size 16 \
+    --patience 20 \
+    --learning_rate 0.001 \
+    --use_multi_gpu \
+    --devices 0,1,2,3
+
+    python -u run_longExp.py \
+    --data custom \
+    --root_path ./dataset/traffic \
+    --data_path traffic.csv \
+    --enc_in 862 \
+    --seq_len 720 \
+    --pred_len 720 \
+    --e_layers 2 \
+    --d_model 512 \
+    --dropout 0.0 \
+    --patch_len 48 \
+    --stride 48 \
+    --pad_size 2 \
+    --local_size 16 \
+    --batch_size 16 \
+    --patience 20 \
+    --learning_rate 0.001 \
+    --use_multi_gpu \
+    --devices 0,1,2,3

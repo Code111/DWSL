@@ -14,7 +14,7 @@ if __name__ == '__main__':
     # basic config
     parser.add_argument('--is_training', type=int, default=1, help='status')
     parser.add_argument('--model_id', type=str, default='test', help='model id')
-    parser.add_argument('--model', type=str, default='DWSL',
+    parser.add_argument('--model', type=str, default='DWCG',
                         help='model name, options')
 
     # data loader
@@ -45,6 +45,9 @@ if __name__ == '__main__':
     parser.add_argument('--decomposition', type=int, default=0, help='decomposition; True 1 False 0')
     parser.add_argument('--kernel_size', type=int, default=25, help='decomposition-kernel')
     parser.add_argument('--individual', type=int, default=0, help='individual head; True 1 False 0')
+    parser.add_argument('--pad_size', type=int, default=1, help=' BHCGSA pad_size')
+    parser.add_argument('--local_size', type=int, default=2, help=' BHCGSA local_size')
+
 
     # Formers
     parser.add_argument('--embed_type', type=int, default=0,
